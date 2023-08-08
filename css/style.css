@@ -1,0 +1,296 @@
+:root {
+  --black: #1e1e1e;
+  --white: #f9f9f9;
+  --yellow: #ffbb36;
+  --green: #29e853;
+  --pink: #ff8399;
+  --blue: #318efc;
+  --darkBlue: #095fc5;
+  --beige: #e1d4c0;
+}
+body {
+  background-color: var(--white);
+  font-family: "Poppins", sans-serif;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.button-pill {
+  border: 2px solid var(--black);
+  background-color: unset;
+  color: var(--black);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 24px;
+}
+
+.button-pill:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+.button-pill:focus {
+  outline: 0;
+}
+
+.button-pill-white {
+  border: 2px solid var(--white);
+  background-color: unset;
+  color: var(--white);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 24px;
+}
+
+.button-pill-white:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+/* Hero Banner*/
+
+.hero-banner {
+  background-image: url("../assets/banner.png");
+  height: 1105px;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-between;
+}
+.hero-banner-front {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.hero-banner-foot {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.hero-banner-foot > span {
+  background-color: var(--black);
+}
+
+/* about*/
+
+.text-about {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.biking-container {
+  background-image: url("../assets/biking.jpeg");
+  background-repeat: no-repeat;
+  height: 667px;
+  background-position: -447px -310px;
+  background-size: auto;
+}
+
+.biking {
+  width: 90%;
+  background-color: var(--yellow);
+}
+.biking h3 {
+  font-size: 3.3rem;
+  line-height: 3.4rem;
+  font-weight: bold;
+}
+.biking p {
+  line-height: 1.7rem;
+}
+
+.about-lower {
+  height: 580px;
+}
+
+.shopping {
+  background-image: url("../assets/shopping.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.events {
+  background-image: url("../assets/events.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.shopping-card {
+  background-color: var(--green);
+}
+.card-title {
+  font-size: 3rem;
+  line-height: 2.8rem;
+  font-weight: bold;
+}
+
+.events-card {
+  background-color: var(--pink);
+}
+/* Quotes*/
+
+.quotes {
+  background-color: var(--blue);
+}
+
+.nav-button {
+  background-color: var(--white);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0;
+}
+.nav-button:hover {
+  background-color: var(--darkBlue);
+}
+.nav-button.active {
+  background-color: var(--darkBlue);
+}
+
+.quote-user {
+  min-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url("../assets/person400.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid var(--white);
+}
+
+.quote-text {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--white);
+}
+
+.name-text {
+  text-align: end;
+}
+.big-quote {
+  font-size: 2rem;
+}
+
+/* Contact us */
+.contact {
+  height: unset;
+}
+
+.contact-container-image {
+  background-image: url("../assets/appartments.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-container {
+  background-color: var(--beige);
+}
+
+.contact-title {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: var(--black);
+}
+.contact-text {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--black);
+}
+
+.adress {
+  list-style: none;
+  color: var(--white);
+}
+
+.adress li h4 {
+  text-decoration: underline;
+}
+
+.adress li p {
+  margin: 0;
+  font-weight: lighter;
+}
+.icons {
+  gap: 1rem;
+}
+.logo-footer {
+  width: 75%;
+}
+@media (min-width: 425px) {
+  .hero-banner-front {
+    font-size: 4rem;
+    line-height: 3.8rem;
+  }
+  .hero-banner-foot {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .hero-banner-front {
+    font-size: 3.3rem;
+  }
+
+  .hero-banner-foot {
+    font-size: 4.5rem;
+  }
+
+  .biking {
+    width: 40%;
+    background-color: var(--yellow);
+  }
+  .biking h3 {
+    font-size: 3rem;
+    line-height: 3.4rem;
+  }
+  .biking-container {
+    background-image: url("../assets/biking.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 667px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-banner-front {
+    font-size: 3.8rem;
+  }
+  .biking {
+    width: 33%;
+  }
+  .biking h3 {
+    font-size: 3.6rem;
+    line-height: 3.4rem;
+  }
+  .contact {
+    height: 780px;
+  }
+  .logo-footer {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .biking h3 {
+    font-size: 4rem;
+    line-height: 3.4rem;
+  }
+}
