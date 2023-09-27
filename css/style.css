@@ -1,5 +1,5 @@
 :root {
-  --black: #1e1e1e;
+  --black: #181818;
   --white: #f9f9f9;
   --yellow: #ffbb36;
   --green: #29e853;
@@ -7,6 +7,7 @@
   --blue: #318efc;
   --darkBlue: #095fc5;
   --beige: #e1d4c0;
+  --lightGreen: #c0e1d1;
 }
 body {
   background-color: var(--white);
@@ -18,7 +19,9 @@ button:focus {
 }
 
 .button-pill {
-  border: 2px solid var(--black);
+  font-size: 0.7rem;
+  font-weight: 700;
+  border: 3px solid var(--black);
   background-color: unset;
   color: var(--black);
   padding: 10px 20px;
@@ -182,9 +185,9 @@ button:focus {
   font-size: 2rem;
 }
 
-/* Contact us */
+/*contact us*/
 .contact {
-  height: unset;
+  position: relative;
 }
 
 .contact-container-image {
@@ -192,46 +195,113 @@ button:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.contact-container {
-  background-color: var(--beige);
-}
-
-.contact-title {
-  font-size: 2.6rem;
-  font-weight: bold;
-  color: var(--black);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 .contact-text {
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 1.9rem;
+}
+.contact-container {
+  background-color: var(--lightGreen);
+}
+.contact-title {
+  line-height: 2.1rem;
+  font-size: 2.3rem;
+  font-weight: 700;
 }
 
 /* Footer */
 
 footer {
   background-color: var(--black);
-}
-
-.adress {
-  list-style: none;
   color: var(--white);
 }
 
-.adress li h4 {
+.footer-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.footer-text {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-list li a {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--white);
+}
+
+.footer-list li a:hover {
   text-decoration: underline;
 }
 
-.adress li p {
+.footer-icon-list {
+  list-style: none;
+  font-size: 1.3rem;
   margin: 0;
-  font-weight: lighter;
+  padding: 0;
+  border: 1px solid var(--white);
+  width: fit-content;
 }
-.icons {
-  gap: 1rem;
+.footer-icon-list li {
+  padding: 10px 15px;
+  border-right: 1px solid var(--white);
+}
+.footer-icon-list li:hover {
+  background-color: white;
+  color: black;
+}
+.footer-icon-list li:last-child {
+  border: none;
+}
+.newsletter-container {
+  border-bottom: 1px solid var(--white);
+}
+.newsletter-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+.newsletter-form {
+  background-color: var(--white);
+  border-radius: 25px;
+  overflow: hidden;
+}
+.newsletter-email {
+  border: none;
+  width: 90%;
+  padding-left: 10px;
+}
+.newsletter-email:focus-visible {
+  outline: none;
+}
+.newsletter-button {
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  padding: 6px 20px;
+  border-radius: 20px;
+}
+.newsletter-image {
+  background-image: url("../assets/appartments2.jpg");
+  background-size: cover;
+  overflow: hidden;
+  background-position: top -60px right 15px;
+  background-repeat: no-repeat;
 }
 .logo-footer {
-  width: 75%;
+  width: 100%;
 }
 @media (min-width: 425px) {
   .hero-banner-front {
@@ -269,8 +339,55 @@ footer {
   }
 }
 
+@media (min-width: 768px) {
+  /*Button*/
+  .button-pill {
+    font-size: 1rem;
+    border: 2px solid var(--black);
+  }
+  /*contact us*/
+  .contact {
+    min-height: 600px;
+  }
+  .contact-container-image {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .container-contact-us {
+    width: 50%;
+  }
+  .container-title-contact {
+    width: 50%;
+  }
+  .contact-title {
+    font-size: 2.8rem;
+    line-height: 2.7rem;
+  }
+  .contact-text {
+    font-size: 1rem;
+    line-height: 2.1rem;
+  }
+  /*Footer*/
+  .footer-title {
+    font-size: 0.8rem;
+  }
+}
+
 @media (min-width: 1024px) {
-  .hero-banner-front {
+  /*contatc us*/
+  .contact-container-image {
+    width: 500px;
+    height: 500px;
+  }
+
+  .contact-title {
+    font-size: 3.5rem;
+    line-height: 3.2rem;
+  }
+  .co .hero-banner-front {
     font-size: 3.8rem;
   }
   .biking {
@@ -280,11 +397,13 @@ footer {
     font-size: 3.6rem;
     line-height: 3.4rem;
   }
-  .contact {
-    height: 780px;
-  }
+
   .logo-footer {
     width: 100%;
+  }
+  /*Footer*/
+  .footer-title {
+    font-size: 1rem;
   }
 }
 
