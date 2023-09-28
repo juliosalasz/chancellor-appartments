@@ -8,6 +8,10 @@
   --darkBlue: #095fc5;
   --beige: #e1d4c0;
   --lightGreen: #c0e1d1;
+  --am1: #2cedfa;
+  --am2: #ffb800;
+  --am3: #8a95fb;
+  --am4: #1decba;
 }
 body {
   background-color: var(--white);
@@ -19,7 +23,7 @@ button:focus {
 }
 
 .button-pill {
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 700;
   border: 3px solid var(--black);
   background-color: unset;
@@ -185,6 +189,50 @@ button:focus {
   font-size: 2rem;
 }
 
+/*amenities*/
+
+.am1 {
+  background-color: var(--am1);
+}
+.am2 {
+  background-color: var(--am2);
+}
+.am3 {
+  background-color: var(--am3);
+}
+.am4 {
+  background-color: var(--am4);
+}
+
+.am-circle {
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.am-circle img {
+  padding-bottom: 5px;
+}
+
+.am-circle.am1 img {
+  width: 110px;
+}
+.am-circle.am2 img {
+  height: 120px;
+}
+.am-circle.am3 img {
+  height: 104px;
+}
+.am-circle.am4 img {
+  height: 104px;
+}
+
+.am-circle p {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
 /*appartments*/
 
 .appartment-hero {
@@ -212,6 +260,12 @@ button:focus {
   margin: 0;
   font-size: 2.5rem;
   font-weight: 700;
+}
+.ammenities-title {
+  margin: 0;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: left;
 }
 
 /*contact us*/
