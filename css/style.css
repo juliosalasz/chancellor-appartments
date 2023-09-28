@@ -185,6 +185,35 @@ button:focus {
   font-size: 2rem;
 }
 
+/*appartments*/
+
+.appartment-hero {
+  height: 500px;
+  background-image: url("../assets/sanFranciscoNight.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.appartment-container {
+  background-color: var(--black);
+  border-radius: 25px;
+  color: var(--white);
+  overflow: hidden;
+}
+.appartment-title {
+  text-align: right;
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.appartment-number {
+  text-align: center;
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
 /*contact us*/
 .contact {
   position: relative;
@@ -304,6 +333,12 @@ footer {
   width: 100%;
 }
 @media (min-width: 425px) {
+  /*appartments*/
+
+  .appartment-number {
+    font-size: 3rem;
+  }
+
   .hero-banner-front {
     font-size: 4rem;
     line-height: 3.8rem;
@@ -314,6 +349,12 @@ footer {
 }
 
 @media (min-width: 576px) {
+  /*Contact us*/
+
+  .contact-container-image {
+    width: 300px;
+    height: 300px;
+  }
   .hero-banner-front {
     font-size: 3.3rem;
   }
@@ -350,10 +391,10 @@ footer {
     min-height: 600px;
   }
   .contact-container-image {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     position: absolute;
-    bottom: 0;
+    bottom: 28%;
     right: 0;
   }
   .container-contact-us {
@@ -377,10 +418,20 @@ footer {
 }
 
 @media (min-width: 1024px) {
+  /*appartments*/
+
+  .appartment-title {
+    font-size: 2.3rem;
+  }
+  .appartment-number {
+    font-size: 5rem;
+  }
+
   /*contatc us*/
   .contact-container-image {
     width: 500px;
     height: 500px;
+    bottom: 0;
   }
 
   .contact-title {
