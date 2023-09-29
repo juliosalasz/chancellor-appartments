@@ -12,6 +12,15 @@
   --am2: #ffb800;
   --am3: #8a95fb;
   --am4: #1decba;
+  --studio: #3019b9;
+  --1bed: #478df6;
+  --2bed: #9919b9;
+  --noFee: #19b963;
+  --buttonBook: #1853ea;
+  --biking: #f8e2a9;
+  --bikeCircle: #ecd087;
+  --bikeRed: #fe2b2b;
+  --bikeTitleRed: #a10000;
 }
 body {
   background-color: var(--white);
@@ -187,6 +196,182 @@ button:focus {
 }
 .big-quote {
   font-size: 2rem;
+}
+
+/*LifeStyle*/
+.biking-background {
+  overflow: hidden;
+  position: relative;
+  background-color: var(--biking);
+}
+.bike-container {
+  z-index: 20;
+  position: inherit;
+}
+
+.bike-circle {
+  background-color: var(--bikeCircle);
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  z-index: 1;
+}
+
+.bike-image-container {
+  position: relative;
+}
+.bike-image-circle {
+  position: inherit;
+  background-image: url("/assets/biking.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 30;
+}
+.bike-red-square {
+  position: absolute;
+  top: 0;
+  left: 170px;
+  background-color: var(--bikeRed);
+  width: 160px;
+  height: 350px;
+  z-index: 29;
+}
+.bike-red-square::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  background-color: var(--bikeRed);
+  width: 350px;
+  height: 350px;
+  z-index: 29;
+  border-radius: 50%;
+}
+
+.bike-title-container {
+  background-color: var(--yellow);
+  width: 560px;
+  padding: 20px;
+  border-radius: 25px;
+  overflow: hidden;
+  position: inherit;
+  z-index: 33;
+}
+
+.bike-title-shadow {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  background-color: var(--bikeRed);
+  width: 560px;
+  height: 168px;
+  z-index: 29;
+  border-radius: 25px;
+}
+.bike-title {
+  width: 350px;
+}
+
+.bike-title h3 {
+  color: var(--bikeTitleRed);
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 3.2rem;
+  margin: 0;
+}
+
+/*Listing*/
+.listing-apartment-card {
+  background-color: white;
+  border: 1px solid #e3e3e3;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.listing-apartment-image {
+  position: relative;
+  height: 260px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.listing-apartment-image.ap1 {
+  background-image: url("/assets/ap1.jpg");
+}
+.listing-apartment-image.ap2 {
+  background-image: url("/assets/ap2.jpg");
+}
+.listing-apartment-image.ap3 {
+  background-image: url("/assets/ap3.jpg");
+}
+.listing-apartment-image.ap4 {
+  background-image: url("/assets/ap4.jpg");
+}
+.listing-apartment-image.ap5 {
+  background-image: url("/assets/ap5.jpg");
+}
+.listing-apartment-image.ap6 {
+  background-image: url("/assets/ap6.jpg");
+}
+.listing-apartment-name p {
+  font-size: 1rem;
+  margin: 0;
+}
+.listing-apartment-name h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+.listing-apartment-details p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+.pill-item {
+  background-color: grey;
+  overflow: hidden;
+  border-radius: 15px;
+  font-size: 1rem;
+  padding: 10px 15px;
+  font-weight: 400;
+  color: var(--white);
+}
+.pill-item.studio {
+  background-color: var(--studio);
+}
+.pill-item.no-fee {
+  background-color: var(--noFee);
+}
+.pill-item.bed1 {
+  background-color: var(--1bed);
+}
+.pill-item.bed2 {
+  background-color: var(--2bed);
+}
+.button-book {
+  background-color: white;
+  width: 100%;
+  color: var(--buttonBook);
+  border: 3px solid var(--buttonBook);
+  padding: 10px 0;
+  border-radius: 15px;
+}
+
+.button-book:hover {
+  background-color: var(--buttonBook);
+  color: var(--white);
+}
+.button-book:active {
+  text-decoration: underline;
 }
 
 /*amenities*/
