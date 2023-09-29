@@ -205,23 +205,26 @@ button:focus {
   background-color: var(--biking);
 }
 .bike-container {
+  height: 600px;
   z-index: 20;
-  position: inherit;
+  position: relative;
 }
 
 .bike-circle {
   background-color: var(--bikeCircle);
-  width: 650px;
-  height: 650px;
+  width: 850px;
+  height: 850px;
   border-radius: 50%;
   position: absolute;
-  top: 0;
-  left: 30px;
+  bottom: -30%;
+  left: 5%;
   z-index: 1;
 }
 
 .bike-image-container {
-  position: relative;
+  position: absolute;
+  top: 10%;
+  left: 14%;
 }
 .bike-image-circle {
   position: inherit;
@@ -229,8 +232,8 @@ button:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   overflow: hidden;
   z-index: 30;
@@ -238,22 +241,31 @@ button:focus {
 .bike-red-square {
   position: absolute;
   top: 0;
-  left: 170px;
+  left: 190px;
   background-color: var(--bikeRed);
-  width: 160px;
-  height: 350px;
+  width: 60px;
+  height: 400px;
   z-index: 29;
 }
 .bike-red-square::after {
   content: "";
   position: absolute;
   top: 0;
-  left: -10px;
+  left: -140px;
   background-color: var(--bikeRed);
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   z-index: 29;
   border-radius: 50%;
+}
+.bike-image {
+  position: relative;
+}
+.bike-title-section {
+  position: absolute;
+  top: 10%;
+  right: 14%;
+  z-index: 50;
 }
 
 .bike-title-container {
@@ -287,6 +299,17 @@ button:focus {
   font-size: 4rem;
   line-height: 3.2rem;
   margin: 0;
+}
+.bike-text-container {
+  width: 350px;
+  position: relative;
+}
+.bike-text-container {
+  position: absolute;
+  top: 200px;
+  font-size: 1.3rem;
+  line-height: 3rem;
+  right: 0;
 }
 
 /*Listing*/
