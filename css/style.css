@@ -102,6 +102,20 @@ button:focus {
 .hero-banner-foot > span {
   background-color: var(--black);
 }
+/*brands*/
+.list-brand {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.list-brand li {
+  width: 140px;
+  padding-top: 30px;
+}
+
+.list-brand li img {
+  width: 100%;
+}
 
 /* Find Appartments */
 .find-image {
