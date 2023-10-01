@@ -206,6 +206,52 @@ button:focus {
 }
 
 /*LifeStyle*/
+
+.lifestyle-container {
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 25px;
+  width: 500px;
+}
+.lifestyle-image {
+  width: 100%;
+  background-image: url("../assets/trains.jpg");
+  height: 220px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.lifestyle-content-text h4 {
+  margin: 0;
+  font-size: 2rem;
+}
+.lifestyle-content-text h3 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.arrow-container {
+  position: relative;
+}
+.arrow {
+  text-align: center;
+  transform: rotate(90deg);
+  font-size: 3rem;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--white);
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  transform: translate(-50%, -50%);
+}
+
 .biking-background {
   overflow: hidden;
   position: relative;
@@ -857,6 +903,21 @@ footer {
 /*TABLET*/
 @media (min-width: 768px) {
   /*LifeStlye*/
+  .lifestyle-image {
+    width: 300px;
+  }
+
+  .lifestyle-intro-h4 {
+    font-size: 3.5rem;
+    line-height: 50px;
+    margin: 0;
+  }
+  .lifestyle-intro-h3 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: start;
+    margin: 0;
+  }
   .bike-container {
     height: 600px;
   }
@@ -1029,6 +1090,7 @@ footer {
 /*Desktop*/
 @media (min-width: 1024px) {
   /*LifeStyle*/
+
   .bike-image-circle {
     position: absolute;
     left: -50px;
