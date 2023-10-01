@@ -27,20 +27,64 @@
         ><img src="assets/chancellor-logo-nav.png" alt="chancellor logo"
       /></a>
 
-      <button type="button" class="button-pill">CONTACT US</button>
+      <div class="d-flex">
+        <ul class="hero-list d-flex align-items-center justify-content-center">
+          <li class="p-2 hero-list-item active">Home</li>
+          <li class="p-2 hero-list-item">LifeStyle</li>
+          <li class="p-2 hero-list-item">Appartments</li>
+          <li class="p-2 hero-list-item">Ammenities</li>
+        </ul>
+        <button type="button" class="button-pill">CONTACT US</button>
+      </div>
     </nav>
 
     <!-- Hero Banner Section -->
     <section id="hero-banner" class="container p-0 py-md-5">
       <div class="hero-banner py-0 t-3 py-md-5 d-flex flex-column">
         <div class="d-flex align-items-center flex-column pt-3 pt-md-5">
-          <img
-            class="d-md-none pb-5 w-75"
-            src="./assets/chancellor-logo-nav-white.png"
-            alt="chancellor logo"
-          />
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <button
+              class="toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+            <img
+              class="d-md-none w-75"
+              src="./assets/chancellor-logo-nav-white.png"
+              alt="chancellor logo"
+            />
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto hero-listig">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">LifeStyle</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Appartments</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ammenities</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
           <h2
-            class="hero-banner-front pt-5 pt-md-0 pb-3 pb-lg-5 text-center text-md-left"
+            class="hero-banner-front px-2 px-md-0 pt-5 pt-md-0 pb-3 pb-lg-5 text-center text-md-left"
           >
             NEED IT ALL. HAVE IT ALL
           </h2>
@@ -48,13 +92,13 @@
             FIND APPARTMENTS
           </button>
         </div>
-        <div class="d-flex px-0 px-md-5 pb-3 pb-md-0">
-          <h2
-            class="hero-banner-foot shadow px-0 px-lg-5 text-center text-md-left"
-          >
-            <span>WELCOME</span> <br /><span>A NEW LIFE</span><br />
-            <span>IN SAN FRANCISCO</span>
-          </h2>
+        <div class="d-flex px-3 px-md-0 px-md-5 pb-3 pb-md-0">
+          <div class="hero-text-container">
+            <h2 class="hero-banner-foot shadow p-3 text-left">
+              <span>WELCOME</span> <br /><span>A NEW LIFE</span><br />
+              <span>IN SAN FRANCISCO</span>
+            </h2>
+          </div>
         </div>
       </div>
     </section>

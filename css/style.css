@@ -78,6 +78,34 @@ button:focus {
   background-color: var(--white);
   color: var(--black);
 }
+.hero-list {
+  list-style: none;
+  margin: 0;
+  padding-right: 20px;
+}
+
+.hero-list-item {
+  cursor: pointer;
+}
+
+.hero-list-item:hover {
+  text-decoration: underline;
+}
+
+.hero-list-item.active {
+  font-weight: bold;
+}
+
+.toggler {
+  background-color: transparent;
+  color: white;
+  border: 2px solid var(--white);
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+.hero-listig a {
+  color: var(--white) !important;
+}
 
 /* Hero Banner*/
 
@@ -97,7 +125,7 @@ button:focus {
 .hero-banner-foot {
   color: var(--white);
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .hero-banner-foot > span {
   background-color: var(--black);
@@ -115,6 +143,10 @@ button:focus {
 
 .list-brand li img {
   width: 100%;
+}
+.hero-text-container {
+  background-color: var(--black);
+  border-radius: 25px;
 }
 
 /*Unit*/
