@@ -117,6 +117,60 @@ button:focus {
   width: 100%;
 }
 
+/*Unit*/
+
+.unit-background {
+  background-image: url("../assets/sfunit.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--white);
+}
+.unit-square {
+  border: 5px solid var(--white);
+}
+
+.unit-square h3 {
+  font-size: 6rem;
+  margin: 0;
+  font-weight: 700;
+}
+.unit-square p {
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 15px;
+  margin: 0;
+  border-top: 2px solid var(--white);
+}
+
+.unit-number h3 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 700;
+}
+.unit-number p {
+  text-align: center;
+  font-size: 0.9rem;
+  padding-top: 15px;
+  margin: 0;
+  border-top: 2px solid var(--white);
+}
+
+.unit-view h3 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 700;
+}
+.unit-view p {
+  text-align: center;
+  font-size: 0.9rem;
+  padding-top: 15px;
+  margin: 0;
+}
+
 /* Find Appartments */
 .find-image {
   background-image: url("../assets/findapt.jpg");
@@ -861,6 +915,23 @@ footer {
 
 /*TABLET*/
 @media (min-width: 768px) {
+  /*Unit number*/
+  .unit-number h3 {
+    font-size: 4rem;
+  }
+
+  .unit-view h3 {
+    font-size: 5rem;
+    border-right: 2px solid var(--white);
+    padding-right: 10px;
+  }
+  .unit-view p {
+    width: 350px;
+
+    text-align: left;
+    padding-left: 10px;
+    font-size: 1.5rem;
+  }
   /*Find Container*/
   .find-background {
     background-image: url("../assets/findapt.jpg");
@@ -1070,6 +1141,18 @@ footer {
 
 /*Desktop*/
 @media (min-width: 1024px) {
+  .unit-square {
+    height: fit-content;
+  }
+  .unit-square p {
+    font-size: 1rem;
+  }
+  .unit-number h3 {
+    font-size: 6rem;
+  }
+  .unit-number p {
+    font-size: 1.6rem;
+  }
   /*LifeStyle*/
   .lifestyle-image {
     height: 300px;
@@ -1186,6 +1269,9 @@ footer {
 
 /*Desktop Bigger*/
 @media (min-width: 1440px) {
+  .unit-square p {
+    font-size: 1.4rem;
+  }
   .biking h3 {
     font-size: 4rem;
     line-height: 3.4rem;
