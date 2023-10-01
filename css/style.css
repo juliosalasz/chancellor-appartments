@@ -103,106 +103,51 @@ button:focus {
   background-color: var(--black);
 }
 
-/* about*/
-
-.text-about {
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 3rem;
-}
-
-.biking-container {
-  background-image: url("../assets/biking.jpeg");
-  background-repeat: no-repeat;
-  height: 667px;
-  background-position: -447px -310px;
-  background-size: auto;
-}
-
-.biking {
-  width: 90%;
-  background-color: var(--yellow);
-}
-.biking h3 {
-  font-size: 3.3rem;
-  line-height: 3.4rem;
-  font-weight: bold;
-}
-.biking p {
-  line-height: 1.7rem;
-}
-
-.about-lower {
-  height: 580px;
-}
-
-.shopping {
-  background-image: url("../assets/shopping.jpg");
+/* Find Appartments */
+.find-image {
+  background-image: url("../assets/findapt.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-.events {
-  background-image: url("../assets/events.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.shopping-card {
-  background-color: var(--green);
-}
-.card-title {
-  font-size: 3rem;
-  line-height: 2.8rem;
-  font-weight: bold;
-}
-
-.events-card {
-  background-color: var(--pink);
-}
-/* Quotes*/
-
-.quotes {
-  background-color: var(--blue);
-}
-
-.nav-button {
-  background-color: var(--white);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 0;
-}
-.nav-button:hover {
-  background-color: var(--darkBlue);
-}
-.nav-button.active {
-  background-color: var(--darkBlue);
-}
-
-.quote-user {
-  min-width: 200px;
   height: 200px;
-  border-radius: 50%;
-  background-image: url("../assets/person400.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border: 5px solid var(--white);
 }
 
-.quote-text {
-  font-size: 1.5rem;
-  font-style: italic;
+.find-container h3 {
+  color: var(--black);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.find-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.find-list li {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.find-list li button {
+  border: 3px solid var(--black);
+  width: 100%;
+  padding: 20px 0;
+}
+.find-list li button:hover {
+  background-color: var(--black);
   color: var(--white);
 }
 
-.name-text {
-  text-align: end;
-}
-.big-quote {
+.find-list li button h3 {
   font-size: 2rem;
+  margin: 0;
+}
+.find-list li button:hover h3 {
+  color: var(--white);
+}
+
+.find-list li button p {
+  font-size: 1rem;
+  margin: 0;
 }
 
 /*LifeStyle*/
@@ -902,6 +847,28 @@ footer {
 
 /*TABLET*/
 @media (min-width: 768px) {
+  /*Find Container*/
+  .find-background {
+    background-image: url("../assets/findapt.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 48%;
+  }
+  .find-container {
+    width: 50%;
+  }
+  .find-list li {
+    padding-bottom: 10px;
+  }
+  .find-list li button h3 {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+
+  .find-list li button p {
+    font-size: 1rem;
+    margin: 0;
+  }
   /*LifeStlye*/
   .lifestyle-image {
     width: 300px;
@@ -1090,6 +1057,9 @@ footer {
 /*Desktop*/
 @media (min-width: 1024px) {
   /*LifeStyle*/
+  .lifestyle-image {
+    height: 300px;
+  }
 
   .bike-image-circle {
     position: absolute;
