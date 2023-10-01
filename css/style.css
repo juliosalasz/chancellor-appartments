@@ -21,6 +21,13 @@
   --bikeCircle: #ecd087;
   --bikeRed: #fe2b2b;
   --bikeTitleRed: #a10000;
+  --pink2: #ff7c7c;
+  --pink3: #ff8399;
+  --pink4: #f84b4b;
+  --cultureShadow: #630073;
+  --skyBlue: #66eef6;
+  --blue2: #52add4;
+  --green2: #297346;
 }
 body {
   background-color: var(--white);
@@ -205,7 +212,7 @@ button:focus {
   background-color: var(--biking);
 }
 .bike-container {
-  height: 600px;
+  height: 900px;
   z-index: 20;
   position: relative;
 }
@@ -222,18 +229,19 @@ button:focus {
 }
 
 .bike-image-container {
-  position: absolute;
-  top: 10%;
-  left: 14%;
+  position: relative;
+  height: 270px;
 }
 .bike-image-circle {
-  position: inherit;
+  position: absolute;
   background-image: url("/assets/biking.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 400px;
+  top: 0;
+  left: -10px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   overflow: hidden;
   z-index: 30;
@@ -241,20 +249,20 @@ button:focus {
 .bike-red-square {
   position: absolute;
   top: 0;
-  left: 190px;
+  left: 105px;
   background-color: var(--bikeRed);
   width: 60px;
-  height: 400px;
+  height: 250px;
   z-index: 29;
 }
 .bike-red-square::after {
   content: "";
   position: absolute;
   top: 0;
-  left: -140px;
+  left: -60px;
   background-color: var(--bikeRed);
-  width: 400px;
-  height: 400px;
+  width: 250px;
+  height: 250px;
   z-index: 29;
   border-radius: 50%;
 }
@@ -262,15 +270,13 @@ button:focus {
   position: relative;
 }
 .bike-title-section {
-  position: absolute;
-  top: 10%;
-  right: 14%;
+  position: relative;
   z-index: 50;
 }
 
 .bike-title-container {
   background-color: var(--yellow);
-  width: 560px;
+  width: 100%;
   padding: 20px;
   border-radius: 25px;
   overflow: hidden;
@@ -284,32 +290,224 @@ button:focus {
   top: 5px;
   left: 0px;
   background-color: var(--bikeRed);
-  width: 560px;
+  width: 100%;
   height: 168px;
   z-index: 29;
   border-radius: 25px;
 }
 .bike-title {
-  width: 350px;
+  width: 230px;
 }
 
 .bike-title h3 {
   color: var(--bikeTitleRed);
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 3.2rem;
   margin: 0;
 }
+
 .bike-text-container {
-  width: 350px;
-  position: relative;
-}
-.bike-text-container {
+  width: 100%;
   position: absolute;
   top: 200px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 3rem;
   right: 0;
+  padding: 0 20px;
+}
+
+.culture-background {
+  background-color: var(--pink3);
+  height: 820px;
+  overflow: hidden;
+}
+.culture-image-container {
+  position: relative;
+}
+.culture-image {
+  position: relative;
+  background-image: url("/assets/events.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  border-radius: 25px;
+  z-index: 20;
+}
+.culture-image-shadow {
+  position: absolute;
+  top: 30px;
+  background-color: var(--cultureShadow);
+  width: 100%;
+  height: 300px;
+  border-radius: 25px;
+  z-index: 10;
+}
+.culture-content-container {
+  position: relative;
+}
+
+.culture-content {
+  position: absolute;
+  top: -90px;
+  left: -7px;
+  background-color: var(--pink2);
+  z-index: 30;
+  border-radius: 25px;
+}
+.culture-content h3 {
+  color: var(--cultureShadow);
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 3rem;
+}
+.culture-content p {
+  color: black;
+  font-size: 1.3rem;
+  border-radius: 25px;
+  line-height: 3rem;
+}
+.culture-content-shadow {
+  width: 100%;
+  position: absolute;
+  background-color: var(--cultureShadow);
+  border-radius: 25px;
+  height: 500px;
+  top: -150px;
+  z-index: 9;
+}
+
+.squares {
+  position: relative;
+}
+.square-1 {
+  position: absolute;
+  top: 100px;
+  left: 410px;
+  width: 500px;
+  height: 500px;
+  background-color: var(--pink4);
+  transform: translate(-50%, -50%) rotate(45deg);
+  z-index: 1;
+}
+.square-2 {
+  position: absolute;
+  top: -150px;
+  left: 1070px;
+  width: 300px;
+  height: 300px;
+  background-color: var(--pink4);
+  transform: translate(-50%, -50%) rotate(65deg);
+  z-index: 2;
+}
+
+.map-background {
+  background-color: var(--skyBlue);
+  height: 820px;
+  overflow: hidden;
+  position: relative;
+}
+.map-background-shadow {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  background-color: #52add4;
+  width: 800px;
+  height: 800px;
+  border-radius: 25px;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+.map-container {
+  position: relative;
+}
+.map-image-container {
+  position: relative;
+  height: 270px;
+}
+
+.map-image {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-image: url("/assets/map.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 270px;
+  border-radius: 25px;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+}
+
+.map-image-shadow {
+  width: 70%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background-color: var(--green2);
+  height: 270px;
+  border-radius: 25px;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  z-index: 29;
+}
+.map-content-container {
+  position: relative;
+  height: 637px;
+}
+
+.map-content {
+  width: 86%;
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  height: 530px;
+  background-color: var(--green);
+  border-radius: 25px;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+.map-content-shadow {
+  width: 86%;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  height: 530px;
+  background-color: var(--green2);
+  border-radius: 25px;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  z-index: 19;
+}
+
+.content {
+  width: 80%;
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content h3 {
+  color: var(--green2);
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.content p {
+  color: black;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 0;
 }
 
 /*Listing*/
@@ -594,7 +792,53 @@ footer {
 .logo-footer {
   width: 100%;
 }
+
+/*MOBILE M*/
+@media (min-width: 375px) {
+  /*LifeStyle*/
+  .bike-image-circle {
+    left: 20px;
+  }
+  .bike-red-square {
+    left: 135px;
+  }
+  .culture-content {
+    left: 0px;
+  }
+  .content p {
+    text-align: center;
+  }
+}
+/*MOBILE L*/
 @media (min-width: 425px) {
+  /*LifeStyle*/
+  .bike-image-container {
+    height: 330px;
+  }
+  .bike-image-circle {
+    left: 20px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .bike-red-square {
+    left: 175px;
+    width: 60px;
+    height: 300px;
+  }
+
+  .bike-red-square::after {
+    left: -100px;
+    width: 300px;
+    height: 300px;
+  }
+  .bike-text-container {
+    padding: 0px 20px;
+  }
+  .culture-content-shadow {
+    top: -190px;
+  }
+
   /*appartments*/
 
   .appartment-number {
@@ -610,39 +854,142 @@ footer {
   }
 }
 
-@media (min-width: 576px) {
-  /*Contact us*/
+/*TABLET*/
+@media (min-width: 768px) {
+  /*LifeStlye*/
+  .bike-container {
+    height: 600px;
+  }
+  .bike-image-container {
+    position: absolute;
 
-  .contact-container-image {
+    left: 17%;
+  }
+  .bike-image-circle {
+    position: absolute;
+    top: 0;
+    left: -80px;
     width: 300px;
     height: 300px;
   }
-  .hero-banner-front {
-    font-size: 3.3rem;
+
+  .bike-red-square {
+    left: 70px;
+    width: 50px;
+    height: 300px;
+  }
+  .bike-red-square::after {
+    left: -120px;
+    width: 300px;
+    height: 300px;
   }
 
-  .hero-banner-foot {
-    font-size: 4.5rem;
+  .bike-title-section {
+    position: relative;
+  }
+  .bike-title-container {
+    width: 400px;
+  }
+  .bike-title-shadow {
+    width: 400px;
+  }
+  .bike-image {
+    position: absolute;
+    top: 0px;
+    left: 40%;
   }
 
-  .biking {
+  .bike-title {
+    width: 400px;
+  }
+
+  .bike-title h3 {
+    font-size: 4rem;
+    line-height: 3.2rem;
+  }
+
+  .bike-text-container {
+    width: 350px;
+  }
+  .bike-text-container {
+    font-size: 1.3rem;
+    line-height: 3rem;
+  }
+  .culture-background {
+    height: 700px;
+  }
+
+  .culture-image {
+    width: 650px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .culture-image-shadow {
+    left: 20px;
+    width: 650px;
+    height: 300px;
+  }
+  .culture-image-container {
+    height: 300px;
+  }
+  .culture-content {
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%, -50%);
+    width: 450px;
+  }
+  .culture-content h3 {
+    padding: 0 20px;
+  }
+
+  .culture-content-shadow {
+    top: 130px;
+    left: 50%;
+    height: 220px;
+    width: 450px;
+    transform: translate(-50%, -50%);
+  }
+  .map-background {
+    height: 580px;
+  }
+  .map-image {
     width: 40%;
-    background-color: var(--yellow);
+    left: 24%;
+    height: 400px;
   }
-  .biking h3 {
+
+  .map-image-shadow {
+    width: 40%;
+    top: 41%;
+    left: 24%;
+    height: 400px;
+  }
+  .map-content {
+    width: 100%;
+    height: 310px;
+    top: -10%;
+  }
+  .map-content-shadow {
+    width: 100%;
+    height: 310px;
+    top: -15%;
+  }
+  .content {
+    width: 48%;
+    top: 48%;
+    left: 70%;
+  }
+  .content h3 {
+    color: var(--green2);
+    font-weight: 700;
     font-size: 3rem;
+    text-align: center;
     line-height: 3.4rem;
   }
-  .biking-container {
-    background-image: url("../assets/biking.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 667px;
-  }
-}
 
-@media (min-width: 768px) {
   /*Button*/
   .button-pill {
     font-size: 1rem;
@@ -679,7 +1026,78 @@ footer {
   }
 }
 
+/*Desktop*/
 @media (min-width: 1024px) {
+  /*LifeStyle*/
+  .bike-image-circle {
+    position: absolute;
+    left: -50px;
+    width: 400px;
+    height: 400px;
+    z-index: 30;
+  }
+  .bike-red-square {
+    height: 400px;
+    left: 160px;
+  }
+  .bike-red-square::after {
+    top: 0;
+    left: -150px;
+    width: 400px;
+    height: 400px;
+    z-index: 29;
+    border-radius: 50%;
+  }
+  .bike-title-section {
+    position: absolute;
+    top: 0%;
+    right: 64%;
+  }
+  .bike-title-container {
+    width: 540px;
+  }
+  .bike-title-shadow {
+    width: 540px;
+  }
+  .bike-text-container {
+    left: 210px;
+  }
+
+  .culture-image-shadow {
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+  }
+  .culture-content h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .culture-content p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .culture-content-shadow {
+    top: 80px;
+  }
+  .map-image {
+    width: 34%;
+    left: 30%;
+  }
+  .map-image-shadow {
+    width: 34%;
+    left: 30%;
+  }
+  .map-content-shadow {
+    width: 80%;
+  }
+  .map-content {
+    width: 80%;
+  }
+  .content {
+    width: 44%;
+    left: 73%;
+  }
+
   /*appartments*/
 
   .appartment-title {
@@ -720,9 +1138,24 @@ footer {
   }
 }
 
+/*Desktop Bigger*/
 @media (min-width: 1440px) {
   .biking h3 {
     font-size: 4rem;
     line-height: 3.4rem;
+  }
+
+  .square-2 {
+    left: 1440px;
+  }
+
+  .map-content {
+    width: 72%;
+  }
+  .map-content-shadow {
+    width: 72%;
+  }
+  .map-background-shadow {
+    width: 930px;
   }
 }
