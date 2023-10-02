@@ -6,4 +6,4 @@
 
 #### Javascript appearing animations.
 
-### lazy loaading, SEO and general opmization
+#### lazy loaading, SEO and general opmization
