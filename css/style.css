@@ -46,7 +46,7 @@ button:focus {
 @keyframes appear {
   0% {
     opacity: 0;
-    transform: translateY(25%);
+    transform: translateY(15%);
   }
   50% {
     transform: translateY(0);
@@ -539,9 +539,9 @@ button:focus {
 }
 
 .map-image {
-  width: 70%;
+  width: 85%;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   background-image: url("/assets/map.png");
   background-repeat: no-repeat;
@@ -555,9 +555,9 @@ button:focus {
 }
 
 .map-image-shadow {
-  width: 70%;
+  width: 85%;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   background-color: var(--green2);
   height: 270px;
@@ -572,11 +572,11 @@ button:focus {
 }
 
 .map-content {
-  width: 86%;
+  width: 100%;
   position: absolute;
   top: 7%;
   left: 50%;
-  height: 530px;
+  height: 630px;
   background-color: var(--green);
   border-radius: 25px;
   overflow: hidden;
@@ -585,11 +585,11 @@ button:focus {
 }
 
 .map-content-shadow {
-  width: 86%;
+  width: 100%;
   position: absolute;
   top: 2%;
   left: 50%;
-  height: 530px;
+  height: 630px;
   background-color: var(--green2);
   border-radius: 25px;
   overflow: hidden;
@@ -600,16 +600,17 @@ button:focus {
 .content {
   width: 80%;
   position: absolute;
-  top: 68%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .content h3 {
   color: var(--green2);
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   text-align: center;
-  line-height: 2rem;
+  line-height: 3rem;
+  margin-bottom: 20px;
 }
 
 .content p {
@@ -955,11 +956,11 @@ footer {
   }
 
   .hero-banner-front {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 3.8rem;
   }
   .hero-banner-foot {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
